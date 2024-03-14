@@ -13,7 +13,7 @@ return {
             close_on_exit = true,
             shell = vim.o.shell,
         }
-        vim.keymap.set({'x', 'n', 's'}, '<C-t>', ':tabnew | terminal<CR>', {})
+        vim.keymap.set({'x', 'n', 's'}, '<C-S-t>', ':tabnew | terminal<CR>', {})
         vim.keymap.set({'x', 'n', 's'}, '<C-S-right>', ':tabnext<CR>', {})
         vim.keymap.set({'x', 'n', 's'}, '<C-S-left>', ':tabprev<CR>', {})
         vim.keymap.set('t', '<C-esc>', [[<C-\><C-n>]], opts)
