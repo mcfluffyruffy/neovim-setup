@@ -12,5 +12,7 @@ return {
                 api_key_cmd = "security find-generic-password -s openai-token -w",
             })
         end,
+        vim.keymap.set({'n'}, '<leader>t',[[<Cmd>ChatGPT<CR>]], opts)
+
     }
 }
