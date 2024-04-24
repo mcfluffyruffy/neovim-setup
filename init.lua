@@ -11,7 +11,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-vim.keymap.set({"i", "x", "n", "s"}, "<C-k>", "<C-o>dd", {desc = "Cut selected line"})
 vim.keymap.set({ "i", "x", "n", "s" }, "<c-s>", "<cmd>update<cr><esc>", { desc = "save file" })
 
 require("vim-options")
